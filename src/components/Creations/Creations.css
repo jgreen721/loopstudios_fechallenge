@@ -27,7 +27,7 @@
   margin-bottom: 8rem;
 }
 
-.creation-items {
+.creation-items-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
@@ -69,7 +69,7 @@
     margin-bottom: 1rem;
     text-align: center;
   }
-  .creation-items {
+  .creation-items-list {
     grid-template-columns: repeat(1, 1fr);
     gap: 2.4rem;
     margin: 3.4rem 0;

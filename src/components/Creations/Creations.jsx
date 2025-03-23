@@ -22,7 +22,7 @@ const Creations = () => {
         <button className="btn see-all-btn uppercase">See All</button>
         </div>
       </div>
-      <ul className="creation-items">
+      <ul className="creation-items-list" role="creation-items">
         {creationItems.map(creationItem=>(
           <li key={creationItem.id} className="creation-item">
             <div className="creation-img-div">
