@@ -22,6 +22,7 @@ const Creations = () => {
         <button className="btn see-all-btn uppercase">See All</button>
         </div>
       </div>
+      <section className="creations-list-section">
       <ul className="creation-items-list" aria-label="Creation Items">
         {creationItems.map(creationItem=>(
           <li key={creationItem.id} className="creation-item">
@@ -35,6 +36,7 @@ const Creations = () => {
           </li>
         ))}
       </ul>
+      </section>
       {/* <div className="mobile"> */}
         <button className="btn see-all-btn uppercase mobile">See All</button>
       {/* </div> */}
