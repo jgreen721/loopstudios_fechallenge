@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(0, 0%, 55%);
+  --darkgray: hsl(0, 0%, 41%);
+  --alata: "Alata", sans-serif;
+  --josefine: "Josefin Sans", sans-serif;
+  --mainPaddingX: 16.5rem;
+}
+
+body {
+  font-family: var(--alta);
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+p,
+small {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.josefine {
+  font-family: var(--josefine);
+}
+
+.alata {
+  font-family: var(--alata);
+}
+
+.no-whitespace {
+  white-space: nowrap;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.25s ease;
+  outline: none;
+}
+
+.btn-transparent {
+  background: transparent;
+  border: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.tablet-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  :root {
+    --mainPaddingX: 4.5rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    --mainPaddingX: 2.4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .desktop-tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
