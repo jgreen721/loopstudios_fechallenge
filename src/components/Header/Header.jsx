@@ -59,7 +59,7 @@ const Header = () => {
              <div className="hero-img-container" aria-hidden="true">
                 <picture>
                     <source media="(max-width: 375px)" srcSet="/images/mobile/image-hero.jpg" />
-                    <img src="/images/desktop/image-hero.jpg" alt="" />
+                    <img loading="lazy" src="/images/desktop/image-hero.jpg" alt="" />
                 </picture>
             </div>
     </header>
