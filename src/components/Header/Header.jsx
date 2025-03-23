@@ -49,13 +49,19 @@ const Header = () => {
         </nav>
 
         <div className="header-h1-content">
-            <h1 className="header-h1 josefine">Immersive</h1>
-            <h1 className="header-h1 josefine">Experiences</h1>
-            <h1 className="header-h1 josefine">That Deliver</h1>
+            <h1 className="header-h1 josefine">
+            <span style={{"--delay":".25s"}} className="animate-h1">Immersive</span>
+            <span style={{"--delay":".5s"}} className="animate-h1">Experiences</span>
+            <span style={{"--delay":".75s"}} className="animate-h1">That <em>Deliver</em></span>
+            </h1>
         </div>
-        <div className="tablet-mobile">
              <MobileMenu links={links} showNav={showNav} setShowNav={setShowNav}/>
-        </div>
+             <div className="hero-img-container" aria-hidden="true">
+                <picture>
+                    <source media="(max-width: 375px)" srcSet="/images/mobile/image-hero.jpg" />
+                    <img src="/images/desktop/image-hero.jpg" alt="" />
+                </picture>
+            </div>
     </header>
   )
 }
