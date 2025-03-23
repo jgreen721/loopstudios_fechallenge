@@ -16,7 +16,7 @@ const Creations = () => {
 
   return (
     <section className="creations-section">
-      <div className="creations-title-row">
+      <div className="creations-title-row" aria-label="creations-section-header">
         <h2 className="josefine thin creations-section-title">Our Creations</h2>
         <div className="desktop-tablet">
         <button className="btn see-all-btn uppercase">See All</button>
