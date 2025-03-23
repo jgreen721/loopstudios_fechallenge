@@ -26,7 +26,7 @@ const Header = () => {
  
   return (
     <header>
-        <nav className="navbar">
+        <nav className="navbar" aria-label="desktop-navigation">
             <div className="logo-div">
                 <img src={iconLogo} alt="site-logo" />
             </div>

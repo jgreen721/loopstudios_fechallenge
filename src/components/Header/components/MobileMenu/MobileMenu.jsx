@@ -5,7 +5,7 @@ import "./MobileMenu.css";
 
 const MobileMenu = ({links,showNav,setShowNav}) => {
   return (
-    <nav className={`mobile-nav ${showNav ? 'show-nav' : 'hide-nav'}`}>
+    <nav className={`mobile-nav ${showNav ? 'show-nav' : 'hide-nav'}`} aria-label="mobile-navigation">
         <div className="nav-top-row">
             <div className="icon-div">
                 <img src={iconLogo} alt="logo" />
